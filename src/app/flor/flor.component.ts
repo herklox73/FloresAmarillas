@@ -35,6 +35,6 @@ export class FlorComponent {
     this.audioPlayer.nativeElement.pause();
     this.audioPlayer.nativeElement.currentTime = 0;
     this.videoPlayer.nativeElement.pause(); // Pausar el video al cerrar el modal
-    this.videoPlayer.nativeElement.currentTime = 0; // Reiniciar el video
+    this.videoPlayer.nativeElement.currentTime = 0; 
   }
 }
