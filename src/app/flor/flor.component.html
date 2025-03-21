@@ -1,0 +1,79 @@
+<div class="container">
+  <!-- Fuegos artificiales -->
+  <div class="fireworks" [ngClass]="{ active: isEnvelopeOpen }">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Flor 1 -->
+  <img src="/flor.png" class="flower flower-1" alt="Flor amarilla" />
+
+  <!-- Flor 2 -->
+  <img src="/flor.png" class="flower flower-2" alt="Flor amarilla" />
+
+  <!-- Flor 3 -->
+  <img src="/flor.png" class="flower flower-3" alt="Flor amarilla" />
+
+  <!-- Flor 4 -->
+  <img src="/flor.png" class="flower flower-4" alt="Flor amarilla" />
+
+  <!-- Flor 5 -->
+  <img src="/flor.png" class="flower flower-5" alt="Flor amarilla" />
+
+  <!-- Flor 6 -->
+  <img src="/flor.png" class="flower flower-6" alt="Flor amarilla" />
+
+  <!-- Flor 7 -->
+  <img src="/flor.png" class="flower flower-7" alt="Flor amarilla" />
+
+  <!-- Flor 8 -->
+  <img src="/flor.png" class="flower flower-8" alt="Flor amarilla" />
+
+  <!-- Flor 9 -->
+  <img src="/flor.png" class="flower flower-9" alt="Flor amarilla" />
+
+  <!-- Flor 10 -->
+  <img src="/flor.png" class="flower flower-10" alt="Flor amarilla" />
+
+  <!-- Texto flotante "Mely" -->
+  <div class="floating-text">Mely</div>
+
+  <!-- Sobre -->
+  <div
+    class="envelope"
+    [ngClass]="{ open: isEnvelopeOpen }"
+    (click)="toggleEnvelope()"
+  >
+    <div class="envelope-flap"></div>
+    <div class="envelope-body"></div>
+  </div>
+
+  <!-- Modal (papel desplegado) -->
+  <div class="modal" [ngClass]="{ open: isModalOpen }">
+    <div class="modal-content">
+      <div class="paper">
+        <!-- Video -->
+        <video #videoPlayer class="modal-video" playsinline>
+          <source src="/flores.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+        <p>Toma unas flores amarillas por bonita :3</p>
+        <button class="close-btn" (click)="closeModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio MP3 -->
+  <audio #audioPlayer preload="auto">
+    <source src="/lovely.mp3" type="audio/mpeg" />
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
