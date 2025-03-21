@@ -275,7 +275,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 350px; /* Aumentado para dar espacio al video */
+  min-height: 300px; /* Reducido porque la imagen ocupa menos espacio que el video */
 }
 .paper p {
   margin: 20px 0;
@@ -293,13 +293,13 @@
   background-color: #e6b800;
 }
 
-/* Video dentro del modal */
-.modal-video {
+/* Imagen dentro del modal */
+.modal-image {
   width: 100%;
   max-width: 260px; /* Ajustado para que quepa bien en el modal */
   height: auto;
   border-radius: 5px;
-  margin-bottom: 20px; /* Espacio entre el video y la frase */
+  margin-bottom: 20px; /* Espacio entre la imagen y la frase */
 }
 
 /* Audio (oculto) */
@@ -383,11 +383,11 @@ audio {
     width: 85%;
     max-width: 350px;
     font-size: 1.4rem;
-    min-height: 300px; /* Ajustado para tablets */
+    min-height: 280px; /* Reducido para tablets */
   }
 
-  /* Ajustar el video */
-  .modal-video {
+  /* Ajustar la imagen */
+  .modal-image {
     max-width: 300px; /* Ajustado para tablets */
   }
 }
@@ -466,11 +466,11 @@ audio {
   .paper {
     width: 95%;
     font-size: 1.2rem;
-    min-height: 280px; /* Ajustado para móviles */
+    min-height: 260px; /* Reducido para móviles */
   }
 
-  /* Ajustar el video */
-  .modal-video {
+  /* Ajustar la imagen */
+  .modal-image {
     max-width: 260px; /* Ajustado para móviles */
   }
 

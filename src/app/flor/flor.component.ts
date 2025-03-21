@@ -16,7 +16,6 @@ export class FlorComponent {
   isEnvelopeOpen: boolean = false;
   isModalOpen: boolean = false;
   @ViewChild('audioPlayer') audioPlayer!: ElementRef<HTMLAudioElement>;
-  @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
 
   toggleEnvelope() {
     if (!this.isEnvelopeOpen) {
@@ -24,7 +23,6 @@ export class FlorComponent {
       setTimeout(() => {
         this.isModalOpen = true;
         this.audioPlayer.nativeElement.play();
-        this.videoPlayer.nativeElement.play(); // Reproducir el video al abrir el modal
       }, 500);
     }
   }
@@ -34,7 +32,5 @@ export class FlorComponent {
     this.isEnvelopeOpen = false;
     this.audioPlayer.nativeElement.pause();
     this.audioPlayer.nativeElement.currentTime = 0;
-    this.videoPlayer.nativeElement.pause(); // Pausar el video al cerrar el modal
-    this.videoPlayer.nativeElement.currentTime = 0; 
   }
 }
