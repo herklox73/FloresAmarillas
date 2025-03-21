@@ -190,9 +190,9 @@
 
 /* Texto flotante "Mely" */
 .floating-text {
-  font-size: 3rem;
+  font-size: 4rem; /* Aumentado de 3rem a 4rem para que sea más grande */
   font-family: "Dancing Script", cursive;
-  font-weight: 700;
+  font-weight: 900; /* Aumentado de 700 a 900 para que sea más grueso */
   color: #ffcc00;
   position: absolute;
   top: 20%;
@@ -275,7 +275,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 300px; /* Reducido porque la imagen ocupa menos espacio que el video */
+  min-height: 300px;
 }
 .paper p {
   margin: 20px 0;
@@ -296,10 +296,10 @@
 /* Imagen dentro del modal */
 .modal-image {
   width: 100%;
-  max-width: 260px; /* Ajustado para que quepa bien en el modal */
+  max-width: 260px;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 20px; /* Espacio entre la imagen y la frase */
+  margin-bottom: 20px;
 }
 
 /* Audio (oculto) */
@@ -362,8 +362,8 @@ audio {
 
   /* Ajustar el texto "Mely" */
   .floating-text {
-    font-size: 2.5rem;
-    top: 15%;
+    font-size: 3.5rem; /* Ajustado para tablets */
+    top: 30%; /* Mover más cerca del sobre */
   }
 
   /* Ajustar el sobre */
@@ -383,12 +383,12 @@ audio {
     width: 85%;
     max-width: 350px;
     font-size: 1.4rem;
-    min-height: 280px; /* Reducido para tablets */
+    min-height: 280px;
   }
 
   /* Ajustar la imagen */
   .modal-image {
-    max-width: 300px; /* Ajustado para tablets */
+    max-width: 300px;
   }
 }
 
@@ -446,8 +446,8 @@ audio {
 
   /* Ajustar el texto "Mely" */
   .floating-text {
-    font-size: 2rem;
-    top: 10%;
+    font-size: 3rem; /* Ajustado para móviles pequeños */
+    top: 35%; /* Mover más cerca del sobre */
   }
 
   /* Ajustar el sobre */
@@ -466,12 +466,12 @@ audio {
   .paper {
     width: 95%;
     font-size: 1.2rem;
-    min-height: 260px; /* Reducido para móviles */
+    min-height: 260px;
   }
 
   /* Ajustar la imagen */
   .modal-image {
-    max-width: 260px; /* Ajustado para móviles */
+    max-width: 260px;
   }
 
   .close-btn {
